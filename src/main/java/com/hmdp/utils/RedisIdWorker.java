@@ -24,6 +24,9 @@ public class RedisIdWorker {
     }
 
     public long nextId(String keyPrefix){
+        /**
+         * 传入业务名，生成订单号
+         */
         // 1 生成时间戳
         LocalDateTime now = LocalDateTime.now();
         long nowSecond = now.toEpochSecond(ZoneOffset.UTC);
