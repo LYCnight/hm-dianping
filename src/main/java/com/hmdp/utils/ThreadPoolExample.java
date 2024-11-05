@@ -12,6 +12,7 @@ public class ThreadPoolExample {
         // 创建一个固定大小为10的线程池
         ExecutorService executor = Executors.newFixedThreadPool(10);
 
+
         // 提交10个任务给线程池执行
         for (int i = 1; i <= 10; i++) {
             int taskId = i;
